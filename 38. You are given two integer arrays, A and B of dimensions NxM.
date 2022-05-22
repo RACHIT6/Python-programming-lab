@@ -6,8 +6,29 @@
 # 5. Mod ( A%B )
 # 6. Power ( A**B )
 
-row = int(input("Enter row of array: "))
-col = int(input("Enter column of array: "))
+A = np.array([[1, 2], [2, 4]])
+B = np.array([[1, 2], [2, 4]])
 
-arr = np.eye(row, col)
-print(arr)
+# Addition
+res = np.add(A, B)
+print(res)
+
+# Substraction
+res = np.subtract(A, B)
+print(res)
+
+# Multiply
+res = np.matmul(A, B)
+print(res)
+
+# Divide
+res = np.floor_divide(A, B)
+print(res)
+
+# Mod
+res = np.mod(A, B)
+print(res)
+
+# Power
+res = np.power(A, B)
+print(res)
